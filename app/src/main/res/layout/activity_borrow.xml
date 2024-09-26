@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_name_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrument Name"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/instrument_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/instrument_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrument Description"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/text_price_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_confirm_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Borrow" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+</LinearLayout>

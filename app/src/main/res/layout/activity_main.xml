@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Instrument Name -->
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrument Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- RatingBar for the instrument rating -->
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <!-- Instrument Price -->
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: 100 credits"
+        android:textSize="18sp" />
+
+    <!-- Input for credits -->
+    <EditText
+        android:id="@+id/edit_credit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter your credits"
+        android:inputType="number" />
+
+    <!-- ChipGroup for selecting instrument type -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <!-- Electric Chip -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_electric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electric" />
+
+        <!-- Acoustic Chip -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_acoustic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acoustic" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Next and Borrow Buttons -->
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrow"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
